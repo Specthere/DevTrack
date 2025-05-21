@@ -1,0 +1,58 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E3CCE00F-274B-E78A-A435-FA1A53EF30A3" name="Role">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 09:47:44 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Role_id" id="C90FFF40-54D6-B36E-2142-451B6B08B6BD">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 09:47:49 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Role" id="C6C93F32-9A1D-60CF-47F2-3A1CA7FE5954">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 09:47:49 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>10</dataTypeSize>
+<ownDataTypeParameters>10,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="826FBA2D-F298-6233-59EF-B83034ADE7F8" name="Role PK">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 09:49:30 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C90FFF40-54D6-B36E-2142-451B6B08B6BD</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

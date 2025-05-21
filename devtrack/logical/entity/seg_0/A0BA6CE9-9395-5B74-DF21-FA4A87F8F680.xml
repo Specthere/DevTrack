@@ -1,0 +1,82 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A0BA6CE9-9395-5B74-DF21-FA4A87F8F680" name="Riwayat">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 14:01:51 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="Riwayat_id" id="D20758F1-549D-9455-69C4-F13A9E718B68">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 14:02:01 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT011</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Tanggal_selesai" id="8F46149A-B739-EBA2-2758-86E9134188DB">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 14:02:01 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT008</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Catatan" id="EF069272-F1B5-0736-61C2-10A73D992874">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 14:02:02 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>500</dataTypeSize>
+<ownDataTypeParameters>500,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="Project_id" id="CAE40F9A-F0DC-C9F0-1CEE-1018185101F5">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 14:06:52 UTC</createdTime>
+<generatorID>692E7638-5E7E-7C88-DC24-BC359177EB70</generatorID>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<referedAttribute>1FA25B88-3A36-DB08-2924-F7542731B43A</referedAttribute>
+<use>0</use>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="B39A2FB0-1819-D06D-F182-3844F8A81B2B" name="Riwayat PK">
+<createdBy>hp</createdBy>
+<createdTime>2025-05-21 14:02:12 UTC</createdTime>
+<ownerDesignName>devtrack</ownerDesignName>
+<engineerTo>
+<item key="C878DA74-9F5E-AB04-E693-F038464C5B58" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D20758F1-549D-9455-69C4-F13A9E718B68</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
