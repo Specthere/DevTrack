@@ -1,8 +1,0 @@
-<?xml version = '1.0' encoding = 'UTF-8'?>
-<OSDM_Design class="oracle.dbtools.crest.model.design.Design" name="devtrack" id="36AEEF02-8B45-7034-0E63-350B1F9281EE" version="3.5">
-<createdBy>hp</createdBy>
-<createdTime>2025-05-21 09:44:43 UTC</createdTime>
-<ownerDesignName>devtrack</ownerDesignName>
-<capitalNames>false</capitalNames>
-<designId>36AEEF02-8B45-7034-0E63-350B1F9281EE</designId>
-</OSDM_Design>

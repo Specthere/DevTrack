@@ -1,45 +1,55 @@
-// models/project_model.dart
-class Project {
-  final int projectId;
+class ProjectModel {
+  final int? projectId;
   final String namaProject;
-  final String status;
   final String lokasi;
-  final String deadline;
-  final String deskripsi;
-  final String klien;
+  final DateTime deadline;
+  final String status;
+  final String? foto;
 
-  Project({
-    required this.projectId,
+  ProjectModel({
+    this.projectId,
     required this.namaProject,
-    required this.status,
     required this.lokasi,
     required this.deadline,
-    required this.deskripsi,
-    required this.klien,
+    required this.status,
+    this.foto,
   });
 
-  factory Project.fromJson(Map<String, dynamic> json) {
-    return Project(
-      projectId: json['project_id'],
-      namaProject: json['nama_project'],
-      status: json['status'],
+  factory ProjectModel.fromJson(Map<String, dynamic> json) {
+    return ProjectModel(
+      projectId: json['projectId'],
+      namaProject: json['namaProject'],
       lokasi: json['lokasi'],
-      deadline: json['deadline'],
-      deskripsi: json['deskripsi'],
-      klien: json['klien'],
+      deadline: DateTime.parse(json['deadline']).toLocal(),
+      status: json['status'],
+      foto: json['foto'],
     );
   }
 
   Map<String, dynamic> toJson() {
     return {
-      'project_id': projectId,
-      'nama_project': namaProject,
-      'status': status,
-      'lokasi': lokasi,
-      'deadline': deadline,
-      'deskripsi': deskripsi,
-      'klien': klien,
+      'ProjectId': projectId,
+      'NamaProject': namaProject,
+      'Lokasi': lokasi,
+      'Deadline': deadline.toUtc().toIso8601String(),
+      'Status': status,
+      'Foto': foto,
+    };
+  }
+
+  Map<String, dynamic> toCreateJson() {
+    final deadlineAtNoon = DateTime(
+      deadline.year,
+      deadline.month,
+      deadline.day,
+      12,
+    );
+    return {
+      'NamaProject': namaProject,
+      'Lokasi': lokasi,
+      'Deadline': deadlineAtNoon.toUtc().toIso8601String(),
+      'Status': status,
+      'Foto': foto,
     };
   }
 }
-
